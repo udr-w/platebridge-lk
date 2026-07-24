@@ -1,6 +1,6 @@
 {
   "name":"platebridge-lk-frontend","private":true,"version":"0.1.0","type":"module",
   "scripts":{"dev":"vite --host 0.0.0.0","build":"tsc && vite build","preview":"vite preview --host 0.0.0.0","test":"vitest run","lint":"eslint src --ext ts,tsx","typecheck":"tsc --noEmit","e2e":"playwright test","screenshots":"node ../scripts/capture-screenshots.mjs"},
-  "dependencies":{"i18next":"23.16.8","lucide-react":"0.468.0","react":"18.3.1","react-dom":"18.3.1","react-i18next":"14.1.3","react-router-dom":"7.18.1"},
-  "devDependencies":{"@playwright/test":"1.49.1","@testing-library/jest-dom":"6.6.3","@testing-library/react":"16.1.0","@types/react":"18.3.12","@types/react-dom":"18.3.1","@typescript-eslint/eslint-plugin":"8.18.1","@typescript-eslint/parser":"8.18.1","@vitejs/plugin-react":"4.2.1","eslint":"8.57.1","eslint-plugin-react-hooks":"4.6.2","jsdom":"25.0.1","typescript":"5.6.3","vite":"5.4.11","vitest":"2.1.8"}
+  "dependencies":{"i18next":"23.16.8","lucide-react":"0.468.0","react":"19.2.8","react-dom":"18.3.1","react-i18next":"14.1.3","react-router-dom":"7.18.1"},
+  "devDependencies":{"@playwright/test":"1.49.1","@testing-library/jest-dom":"6.6.3","@testing-library/react":"16.1.0","@types/react":"19.2.17","@types/react-dom":"18.3.1","@typescript-eslint/eslint-plugin":"8.18.1","@typescript-eslint/parser":"8.18.1","@vitejs/plugin-react":"4.2.1","eslint":"8.57.1","eslint-plugin-react-hooks":"4.6.2","jsdom":"25.0.1","typescript":"5.6.3","vite":"5.4.11","vitest":"2.1.8"}
 }
