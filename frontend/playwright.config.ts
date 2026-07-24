@@ -1,0 +1,2 @@
+import {defineConfig,devices} from '@playwright/test';
+export default defineConfig({testDir:'./e2e',timeout:30000,use:{baseURL:process.env.PLAYWRIGHT_BASE_URL||'http://localhost:5173',trace:'retain-on-failure'},projects:[{name:'chromium',use:{...devices['Desktop Chrome'],channel:process.env.CI?undefined:'chrome'}}],webServer:process.env.PLAYWRIGHT_EXTERNAL?undefined:[{command:'cd ../backend && .venv/bin/uvicorn app.main:app --port 8000',port:8000,reuseExistingServer:true},{command:'npm run dev',port:5173,reuseExistingServer:true}]});

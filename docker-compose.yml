@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: sqlite:////data/platebridge.db
+      PRODUCT_NAME: ${PRODUCT_NAME:-PlateBridge LK}
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-demo123}
+    volumes:
+      - platebridge-data:/data
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend: {condition: service_healthy}
+    ports: ["8080:80"]
+volumes:
+  platebridge-data:
