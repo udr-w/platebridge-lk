@@ -38,6 +38,33 @@ scripts\start.cmd
 
 PowerShell equivalents are `./scripts/setup.ps1` and `./scripts/start.ps1`. Windows paths, virtual-environment executables and `npm.cmd` are handled explicitly.
 
+## What it looks like
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/01-landing.png" alt="PlateBridge LK landing page" />
+      <br /><strong>Public landing page</strong>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/05-nearby-food.png" alt="Nearby surplus-food listings for a recipient" />
+      <br /><strong>Nearby food discovery</strong>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="docs/screenshots/04-safety-result.png" alt="Amber food-safety classification requiring coordinator review" />
+      <br /><strong>Explainable safety screening</strong>
+    </td>
+    <td width="50%">
+      <img src="docs/screenshots/07-rescue-detail.png" alt="Rescue detail page with pickup code and status timeline" />
+      <br /><strong>Auditable rescue handover</strong>
+    </td>
+  </tr>
+</table>
+
+More desktop, multilingual, role-specific, and mobile captures are available in [docs/screenshots](docs/screenshots/README.md).
+
 ## Demo accounts
 
 Shared password: `demo123`
